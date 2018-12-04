@@ -205,7 +205,7 @@ function update(selection) {
                 		return d.id;
             });
 			//---------------------interacción------------------------------
-			box.on('mouseon', function(d) {
+			box.on('mouseenter', function(d) {
 			  	    d3.selectAll('.vizSex').html("");
 					prepareInfoB();
 					prepareSB();
