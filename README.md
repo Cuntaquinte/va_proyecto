@@ -2,11 +2,12 @@
 Proyecto final de Visual Analytics UniAndes 2018
 
 CLIENTE : ALEJANDRO REYES
+
 PROFESOR : JOHN A. GUERRA.
+
 ESTUDIANTES:
 -ANGELA SOFÍA GARCÍA VEGA, AS.GARCIAV@UNIANDES.EDU.CO  
 -CARLOS MORENO IBARGÜEN.      C.MORENO@UNIANDES.EDU.CO
-PROYECTO FINAL VISUAL ANALYTICS.
 
 ## Contexto:
  
@@ -60,10 +61,10 @@ C. Encontrar datos extremos
 ### How?
  
 IDIOM1 – Multiple filtered graphics
--Tablas
--Gráficos de barras
--Multiple Line chart
--Heatmap con small multiples
+- Tablas
+- Gráficos de barras
+- Multiple Line chart
+- Heatmap con small multiples
  
 IDIOM2 – Dendograma horizontal
 Marcas: Puntos para los nodos y Lineas para las conecciones jerárquicas basadas en taxonomía
@@ -72,15 +73,17 @@ Encode: Separate, order, align,
 Reduce: Filter (from previous IDIOM) y Aggregate por el nombre del taxón en la taxonomía
  
 ## Insights:
-Se tienen un número homogéneo de personas a lo largo de las diferentes ciudades, sexo y estado nutricional
-Dos terceras partes de la población estudiada tiene sobrepeso u obesidad
-Hay una tendencia de asociación entre el consumo de grasa y proteína, que es inversamente proporcional al consumo de carbohidrato. Hay algunos datos extremos que tienen un muy alto consumo de proteina con un bajo consumo de grasa y visceversa. Lo que indica que la dieta puede ser variable entre cada individuo
-Revisando el heatmap las OTUs presentes en la mayor parte de los individuos de todas las ciudades se encuentran entre las primeras 36 OTUs las cuales se pueden considerar como descriptoras genéricas de toda la problación colombiana hay algunas OTUs que se encuentran en mayor proporción en alguna de las diferentes ciudades, dichas OTUs son de interés para revisarlas en detalle posteriormente
-De acuerdo con lo reportado por cada individuo la calidad de la dieta en las diferentes ciudades es buena, lo cual es interesante teniendo en cuenta que dos terceras partes de la población en cada ciudad tienen sobrepeso y obesidad (Generan preguntas como ¿La persona reportó en realidad su consumo usual? ¿La población estudiada conoce lo que es una dieta saludable? De ser así es posible un sesgo en éste dato).
-Todas las familias taxonómicas descritas se encuentran destribuidas de forma similar a lo largo de los diferentes estados de salud, a lo largo de las diferentes ciudades y del sexo de las personas, su variación es dependiente de la abundancia a pesar de que las diferencias entre las diferentes variables es pequeña.
-Entre las diferentes ciudades la abundancia relativa de los diferentes taxa se asemejan entre Bogotá, Medellín y Barranquilla, observando diferencias marcadas con Bucaramanga o Cali donde se observa una mayor cantidad de Bacteroidetes y una disminución en la cantidad de Actinobacterias
-Al comparar las abundancias de las diferentes familias de bacterias no se observan diferencias marcadas entre los diferentes estados nutricionales de la cohorte estudiada
-Si se observan diferencias en las abundancias de ciertos grupos taxonómicos por ejemplo en aquellos individuos con un estado nutricional normal hay mayor abundancia relativa de Verrucomicrobia un taxón que se caracteriza por describir bacterias ambientales.
+- Se tienen un número homogéneo de personas a lo largo de las diferentes ciudades, sexo y estado nutricional
+- Dos terceras partes de la población estudiada tiene sobrepeso u obesidad
+- Hay una tendencia de asociación entre el consumo de grasa y proteína, que es inversamente proporcional al consumo de carbohidrato. Hay algunos datos extremos que tienen un muy alto consumo de proteina con un bajo consumo de grasa y visceversa. Lo que indica que la dieta puede ser variable entre cada individuo
+- Revisando el heatmap las OTUs presentes en la mayor parte de los individuos de todas las ciudades se encuentran entre las primeras 36 OTUs las cuales se pueden considerar como descriptoras genéricas de toda la problación colombiana hay algunas OTUs que se encuentran en mayor proporción en alguna de las diferentes ciudades, dichas OTUs son de interés para revisarlas en detalle posteriormente
+- De acuerdo con lo reportado por cada individuo la calidad de la dieta en las diferentes ciudades es buena, lo cual es interesante teniendo en cuenta que dos terceras partes de la población en cada ciudad tienen sobrepeso y obesidad (Generan preguntas como ¿La persona reportó en realidad su consumo usual? ¿La población estudiada conoce lo que es una dieta saludable? De ser así es posible un sesgo en éste dato).
+- Todas las familias taxonómicas descritas se encuentran destribuidas de forma similar a lo largo de los diferentes estados de salud, a lo largo de las diferentes ciudades y del sexo de las personas, su variación es dependiente de la abundancia a pesar de que las diferencias entre las diferentes variables es pequeña.
+- Entre las diferentes ciudades la abundancia relativa de los diferentes taxa se asemejan entre Bogotá, Medellín y Barranquilla, observando diferencias marcadas con Bucaramanga o Cali donde se observa una mayor cantidad de Bacteroidetes y una disminución en la cantidad de Actinobacterias
+- Al comparar las abundancias de las diferentes familias de bacterias no se observan diferencias marcadas entre los diferentes estados nutricionales de la cohorte estudiada
+- Si se observan diferencias en las abundancias de ciertos grupos taxonómicos por ejemplo en aquellos individuos con un estado nutricional normal hay mayor abundancia relativa de Verrucomicrobia un taxón que se caracteriza por describir bacterias ambientales.
 
-
+## External Links
+Slides: https://docs.google.com/presentation/d/1_FYl-cn3iF9RZo5NQ_I2rFDqR6m7GlxDXIILzBvmjjc/edit?usp=sharing
+Demo: https://cuntaquinte.github.io/va_proyecto/index.html
  
