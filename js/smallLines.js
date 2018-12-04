@@ -129,26 +129,10 @@
               .attr("height", height-(margin.top+margin.bottom))
               .attr("opacity", 0)
 
-
-            var tooltip = d3.select("body")
-              .append("div")
-              .data(matrix)
-              .style("position", "absolute")
-              .style("z-index", "10")
-              .style("right", "0")
-              .style("visibility", "hidden")
-              .html(function(d) {
-                    setNutriEstado(d);
-                    console.log(`G: `+gr+` P: `+p);
-                    estado=getEstado(p,gr,c);
-                    info="<table class='qresumen'><tr> <td colspan=3>Muestra: <b>"+d.id+"</b>, " + d.sex + " de <b>" + d.age + "</b> años</td></tr><tr> <td>%Proteina:</td>  <td>["+d.per_protein+"]</td> <td><b>"+p+"</b></td> </tr><tr> <td> %Grasa: </td>  <td>["+d.per_total_fat+"]</td> <td><b>"+gr+"</b></td> </tr><tr> <td>%Carbohidratos:</td>  <td>["+d.per_carbohydrates+"]</td> <td><b>"+c+"</b></td> </tr><tr> <td  colspan=3>Estado de salud: <b>" + estado + "</b></td></tr></table>";
-                    return info;
-                  })
-
             x.domain(data.map(function(d) { return d.id; })); 
             y.domain([0, 70]);
 
-            x.invert = (function(){
+            x.invert = (function(d){
                 var domain = x.domain()
                 var range = x.range()
                 var scale = d3.scaleQuantize().domain(range).range(domain)
@@ -224,18 +208,42 @@
               .style("fill", "#377eb8")
               .text("Carbohidratos");
 
+
+
+            var tooltip = d3.select("body")
+              .data(matrix)
+              .append("div")
+              .style("position", "absolute")
+              .style("z-index", "10")
+              .style("right", "0")
+              .style("visibility", "hidden") 
+
             svgChart
-              .on("mouseover", function(){ 
-                
+              .on("mouseover", function(d){                 
+                   console.log(`D: `,d3.mouse(this)[0]);
                    var xy = d3.mouse(eventCapture.node())
-                   var d = x.invert(xy[0]) 
-                   var nx = x(d) + (x.bandwidth()/2)
+                   // var d = x.invert(xy[0]) 
+                   var dd = x.invert(d3.mouse(this)[0]) 
+                   var nx = x(dd) + (x.bandwidth()/2)
                    
                   guideLine.transition().duration(100).attr("x1", nx).attr("x2", nx);
+                 
+
+                    console.log(`Matrix: `,matrix);
+
+              tooltip.html(function(d) {
+                    console.log(`XXX: `,d);
+                    setNutriEstado(d);
+                    console.log(`G: `+gr+` P: `+p+`......`+d.id);
+                    estado=getEstado(p,gr,c);
+                    info="<table class='qresumen'><tr> <td colspan=3>Muestra: <b>"+d.id+"</b>, " + d.sex + " de <b>" + d.age + "</b> años</td></tr><tr> <td>%Proteina:</td>  <td>["+d.per_protein+"]</td> <td><b>"+p+"</b></td> </tr><tr> <td> %Grasa: </td>  <td>["+d.per_total_fat+"]</td> <td><b>"+gr+"</b></td> </tr><tr> <td>%Carbohidratos:</td>  <td>["+d.per_carbohydrates+"]</td> <td><b>"+c+"</b></td> </tr><tr> <td  colspan=3>Estado de salud: <b>" + estado + "</b></td></tr></table>";
+                    return info;
+                  });
+
                   return tooltip.style("visibility", "visible");  
               })
-              .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
-              .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+              .on("mousemove",function(){ return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
+              .on("mouseout", function(){ return tooltip.style("visibility", "hidden");});
 
         //-----------------------------colrgb(238, 167, 136)
          }
