@@ -53,8 +53,8 @@
     top: 1em;
     left: 16em;
 }
-.node {
-    /*stroke: white;*/
+.qnode {
+    stroke: white;
     stroke-width: 2px;
 }
 .link {
@@ -79,7 +79,9 @@
     text-anchor: middle;
     cursor: move;
 }
-  	
+.legend-box {
+  cursor: pointer;
+}
 #id{
 	position: absolute;
     top:0; 
