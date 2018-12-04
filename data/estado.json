@@ -1,0 +1,22 @@
+{
+	"Medellin": [	
+			{ "region": "Bueno", "count": "78"},
+			{ "region": "Malo", "count": "23"}
+	],
+	"Bogota": [
+			{ "region": "Bueno", "count": "76"},
+			{ "region": "Malo", "count": "10"}
+	],
+	"Barranquilla": [
+			{ "region": "Bueno", "count": "80"},
+			{ "region": "Malo", "count": "10"}
+	],
+	"Bucaramanga": [
+			{ "region": "Bueno", "count": "65"},
+			{ "region": "Malo", "count": "14"}
+	],
+	"Cali": [
+			{ "region": "Bueno", "count": "81"},
+			{ "region": "Malo", "count": "9"}
+	]
+}
