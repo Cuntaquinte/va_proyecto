@@ -34,7 +34,8 @@ There is information in the form of a table for 441 people, each with their repo
 Main task No 1: To explore the information described by the different aspects collected (variables or attributes) available in a sample of the Colombian population. Explore, features: Given the vast amount of information and variables available. 
  
 Summarize, All data: Create a synthesis of the data on one of the attributes: health, diet or microbiota. 
-A. Categorize the relationship between the elements (possibility of creating data groups) Derive, Characteristics: Create groupings based on gut microbiota abundance data, clusters based on data. 
+
+A-. Categorize the relationship between the elements (possibility of creating data groups) Derive, Characteristics: Create groupings based on gut microbiota abundance data, clusters based on data. 
 B. Discriminate the data by the different sociodemographic variables Compare, characteristics of similarity: compare the data of the main themes of the attributes of age group, sex, and city 
 C. Find the factors that affect health Locate, Characteristics: Look for the factors related to the performance of cardiovascular health D. Enjoy navigation through the different visualization charts Enjoy: That the information found is pleasing to the eye 
  
