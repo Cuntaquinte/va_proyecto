@@ -31,15 +31,15 @@ There is information in the form of a table for 441 people, each with their repo
  
 ### Why? 
  
-Main task No 1: To explore the information described by the different aspects collected (variables or attributes) available in a sample of the Colombian population. Explore, features: Given the vast amount of information and variables available. 
+#### Main task No 1: To explore the information described by the different aspects collected (variables or attributes) available in a sample of the Colombian population. Explore, features: Given the vast amount of information and variables available. 
  
 Summarize, All data: Create a synthesis of the data on one of the attributes: health, diet or microbiota. 
 
-A-. Categorize the relationship between the elements (possibility of creating data groups) Derive, Characteristics: Create groupings based on gut microbiota abundance data, clusters based on data. 
-B. Discriminate the data by the different sociodemographic variables Compare, characteristics of similarity: compare the data of the main themes of the attributes of age group, sex, and city 
-C. Find the factors that affect health Locate, Characteristics: Look for the factors related to the performance of cardiovascular health D. Enjoy navigation through the different visualization charts Enjoy: That the information found is pleasing to the eye 
+A- Categorize the relationship between the elements (possibility of creating data groups) Derive, Characteristics: Create groupings based on gut microbiota abundance data, clusters based on data. 
+B- Discriminate the data by the different sociodemographic variables Compare, characteristics of similarity: compare the data of the main themes of the attributes of age group, sex, and city 
+C- Find the factors that affect health Locate, Characteristics: Look for the factors related to the performance of cardiovascular health D. Enjoy navigation through the different visualization charts Enjoy: That the information found is pleasing to the eye 
  
-Main task No.2: Identify patterns in the topics of intestinal microbiota, diet, and health in a sample of the Colombian population. Identify, trends: Identify at least one item for each of the central themes that relate to each other. 
+#### Main task No.2: Identify patterns in the topics of intestinal microbiota, diet, and health in a sample of the Colombian population. Identify, trends: Identify at least one item for each of the central themes that relate to each other. 
  
 Secondary tasks of the main task No.1: A. Identify dependencies between the different topics Discover, dependcy: locate dependencies between the variables B. Classification of the data regarding health or not Derivation, Characteristics: Create groups of data that strongly grouped between them C. Extreme data identification data, outliers: Identify individuals with 
  
