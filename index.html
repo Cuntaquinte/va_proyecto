@@ -80,24 +80,24 @@
           </h2>
           <div class="subheading mb-5">Cliente :  Alejandro Reyes<br>
                 Estudiantes: Angela Sofía García Vega, Carlos Moreno Ibargüen. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="">as.garciav@uniandes.edu.co</a>,&nbsp;&nbsp;&nbsp;<a href="">c.moreno@uniandes.edu.co</a><br>
-            Proyecto final para la materia de Visual Analytics.<br>
+            <a href="">as.garciav@uniandes.edu.co</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">c.moreno@uniandes.edu.co</a><br>
+            Proyecto final para la materia de Visual Analytics. <span class="text-primary">Uniandes 2018-2</span> <br>
             Profesor : John A. Guerra.
           </div>
           <p class="lead mb-5">
 
           En el marco de la medicina personalizada diversas investigaciones han descrito que la microbiota
           humana y sobre todo la microbiota intestinal, cambia en relación a los estados de salud del
-          individuo[1]. Así mismo la microbiota intestinal varía de acuerdo con el ecosistema disponible en el
-          hospedero[1]. Uno de los factores que modifica la composición de la microbiota intestinal es la dieta, la
-          cuál altera la cantidad de calorías y de nutrientes disponibles para el metabolismo de la microbiota [2].
+          individuo. Así mismo la microbiota intestinal varía de acuerdo con el ecosistema disponible en el
+          hospedero. Uno de los factores que modifica la composición de la microbiota intestinal es la dieta, la
+          cuál altera la cantidad de calorías y de nutrientes disponibles para el metabolismo de la microbiota.
           Cabe destacar que la dieta es uno de los factores actualmente reconocidos como modificables en los
-          estilos de vida de la población para promover una buena salud [3]. Teniendo en cuenta lo anterior es
+          estilos de vida de la población para promover una buena salud . Teniendo en cuenta lo anterior es
           posible presumir una relación entre la microbiota intestinal, la dieta y el estado de salud de los
           individuos. 
           </p>
 
-          <p class="lead mb-5">439 personas fueron encuestadas en diferentes ciudades de Colombia, (Bogotá, Medellin, Cali, Bucaramanga y Barranquilla), respecto a sus habitos alimenticios, su estado de salud y su microbiota intestinal.
+          <p class="lead mb-5">441 personas fueron encuestadas en diferentes ciudades de Colombia, (Bogotá, Medellin, Cali, Bucaramanga y Barranquilla), respecto a sus habitos alimenticios, su estado de salud y su microbiota intestinal.
           En la presente visualización intentaremos encontrar que relación hay entre estos tres aspectos.
           Por favor seleccione uno de estas carácteristicas para agrupar e inicie la navegación dando click en cualquiera de los recuadros.</p>
         </div>
@@ -177,13 +177,19 @@ una muestra de la población colombiana.</div>
               <div class="subheading mb-3"> 
                 Identificar patrones entre los temas de microbiota intestinal, dieta y salud en
                 una muestra de la población colombiana.</div>
-              <p>When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development worl</p>
+              <p>La técnologia utilizada fueron:
+              <ul>
+                <li>Html</li>
+                <li>Javascript + Libreia D3 V5.</li>
+                <li>Css</li>
+              </ul>
+              Los datos se manipularon en los formatos csv, tsv y json.<br>
+              El preprocsamiento consistió en filtrar, extraer y calcular los daos necesarios para implementar las visualizaciones, 
+              dado que no se contó con un servidor con maenjador de base de datos para generar los datos dinámicamente.
+            </p>
             </div>
-        <!--     <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
-            </div> -->
           </div>
-
+            <br><br>
  
           <p class="mb-0" style="justify-content: ">
                 <h2>MIT License</h2>
@@ -204,9 +210,9 @@ una muestra de la población colombiana.</div>
       <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="viz"> -->
       <section class="resume-section d-flex flex-column" id="viz">
 
-        <div class="my-auto">
+        <div >
           <h2 class="mb-3">Viz</h2>
-            <table>
+            <table border=1>
               <tr>
                 <td colspan="4">
                   <div>
@@ -222,11 +228,12 @@ una muestra de la población colombiana.</div>
                 </td>
               </tr>
               <tr>
-                <td class="qMain">
+                <td class="qMain" style="position:relative; overflow: auto;top: 0;margin-top:0px;">
+
                   <div class="legend"  style="top: 0;margin-top:0px;"></div>      
                 </td>
-                <td  style="border-right: dashed; border-width: thin;" class="frc">
-                  <div class="qforce"  style="top: 0;margin-right:0px;ft: 10px;position: -webkit-sticky;">
+                <td  style="border-right: dashed; border-width: thin;margin-top:0"  height="400" class="frc">
+                  <div class="qforce"  style="top: 0;margin-right:0px;ft: 10px;position: -webkit-sticky;margin-top: 0">
                     <svg width="600" height="400"></svg>
                     <script src="js/qforces.js"></script>
                   </div>        
@@ -249,7 +256,7 @@ una muestra de la población colombiana.</div>
                           <div class="heat6" ></div>
                       </div>
                         <!-- ****************************************** -->
-                      <div class="lineChart">
+                      <div class="lineChart" style="top: 0;margin-top:0px;">
                         <div class="chart1" style="top: 0;margin-right:0px;" ></div>     
                       </div>
                         <!-- ****************************************** -->
@@ -377,6 +384,16 @@ una muestra de la población colombiana.</div>
     });
   });
 
+
+  $('.legend-box').mouseover(function(){
+        d3.select(this).style("cursor", "pointer"); 
+      }
+    );
+
+  $('.legend-box').mouseout(function(){  
+        d3.select(this).style("cursor", "default"); 
+      }
+    );
 </script>
 
 </html>
