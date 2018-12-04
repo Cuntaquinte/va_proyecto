@@ -1,4 +1,5 @@
-# va_proyecto
+# Variation in the Colombian gut microbiome according to diet and health
+
 Proyecto final de Visual Analytics UniAndes 2018
 
 CLIENTE : ALEJANDRO REYES
