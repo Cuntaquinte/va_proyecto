@@ -123,6 +123,7 @@ function update(selection) {
 		node = node.enter().append("circle")
 			.attr("class", "qnode")
 			.attr("r", 6)
+      		.style("cursor", "pointer")
 			.attr("fill", function(d) {
 				// item=(firstLinks ?d.ciudad:d.sexo)
 				switch (selection) {
