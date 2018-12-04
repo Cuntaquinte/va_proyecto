@@ -191,7 +191,7 @@ console.log(`valRange `,valRange,` legendBins `,legendBins, ` legendElementWidth
         .attr('x', 630 )
         .attr('y', 18)
         .attr('text-anchor', 'end')
-        .text('Presencia / Ausencia de microbiota por ciudad')
+        .text('nivel de presencia de la microbiota por ciudad')
 //-----------------------------------------------------------
   }
   function splitData(Datos,matrix,indx){

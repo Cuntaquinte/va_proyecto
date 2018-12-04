@@ -182,8 +182,8 @@ function update(selection) {
 	    }
 	  	var issue = svgL.selectAll(".issue")
 	     .data(groups) // Select nested data and append to new svg group elements
-	     .enter()
-		    var legendSpace = 100 / groups.length; 
+	     .enter();
+		var legendSpace = 100 / groups.length; 
 	    box =issue.append("rect")
 	      .attr("width", 20)
 	      .attr("height", 20)           
