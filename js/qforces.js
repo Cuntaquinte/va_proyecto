@@ -220,7 +220,8 @@ function update(selection) {
 					getInfo(graph.nodes,selection,qItem);
 
 	                 d3.selectAll('.info')
-                 		.append('tr')
+                 		// .append('tr')
+                 		.select('tr')
                  		.append('td')
                  		.append('div')
                  		.attr("class", "pieChart");
