@@ -57,22 +57,26 @@ var simulation = d3.forceSimulation()
 var selected="ciudad";
 
 //	follow v4 general update pattern
-function update(selection) {
-
+function update(selection) {		
 		prepareInfoH();
     if (selection=="otu"){
-  	    d3.selectAll('.qMain').style("visibility","visible");
+  	    // d3.selectAll('.qMain').style("visibility","visible");
   	    d3.selectAll('.aux').style("visibility","visible");
   	    d3.selectAll('.frc').style("visibility","visible");
+  	    d3.selectAll('.lineChart').html("");
   	    d3.selectAll('.info').html("");
 		d3.selectAll('.force').html("");	
-		prepareInfoH();  
+		prepareInfoH();
         $.getScript("js/qheatmap.js", function(d) {
             	loadChart() ;
         });
+       	  d3.select('.qMain').append("div").attr("class", "legend");
         selection="ciudad";
+
     }else{  
-		prepareInfoH();
+
+  	    	prepareInfoB();
+			prepareInfoH();
 	  	    d3.selectAll('.info').style("visibility","visible");
 	  	    d3.selectAll('.qMain').style("visibility","visible");
 	  	    d3.selectAll('.aux').style("visibility","visible");
@@ -473,6 +477,8 @@ function getSelector(v, selection) {
        	    d3.select('.chart4').remove();
 
        	    d3.select('.lineChart').append("div").attr("class", "chart1");
+
+       	    d3.select('.qMain').append("div").attr("class", "legend");
 	}
 	function prepareSB(){
 			cleanInfoHeat();			
