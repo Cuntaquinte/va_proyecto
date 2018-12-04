@@ -23,9 +23,9 @@ There is information in the form of a table for 441 people, each with their repo
  
 #### Type of data: 
  
--Category (city, sex, classification of nutritional status, classification of health status) 
+- Category (city, sex, classification of nutritional status, classification of health status) 
  
--Ordinals - Quantitative sequential (all variables of diet, socio-demographic variables: age, stratum, and all health variables) 
+- Ordinals - Quantitative sequential (all variables of diet, socio-demographic variables: age, stratum, and all health variables) 
  
 - Qualitative - ordinal - sequential (classification of nutritional status) 
  
