@@ -194,7 +194,7 @@ div.panel_2 {
 	padding: 12px;
 	/*background: rgba(0, 0, 0, 0.8);*/
 	background: #efefef;
-	color: #efefef;
+	color: black;
 	border-radius: 2px;
 }
 /* Creates a small triangle extender for the tooltip */
