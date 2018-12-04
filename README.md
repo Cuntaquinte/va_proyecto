@@ -1,90 +1,65 @@
-# Variation in the Colombian gut microbiome according to diet and health
+# Final project of Visual Analytics UniAndes 2018 
+ 
+CLIENT: ALEJANDRO REYES 
+ 
+PROFESSOR: JOHN A. WAR. 
+ 
+STUDENTS: -ANGELA SOFÍA GARCÍA VEGA, AS.GARCIAV@UNIANDES.EDU.CO 
+-CARLOS MORENO IBARGÜEN. C.MORENO@UNIANDES.EDU.CO 
+ 
+## Context: 
+ 
+To understand the information described in the visualization, a minimum knowledge about health and the variables that can influence it is required. The project seeks to develop basic research in the area of health of the variables of health, nutrition, and intestinal microbiota. Previous studies in different populations found in the world that the intestinal microbiota changes concerning the various health states of the individual [1], some studies that the intestinal microbiota changes with diet [2]. Taking into account that changing the diet is one of the outstanding methodologies to improve the health of people, in general, it is essential to identify the relationship between diet, intestinal microbiota, and health. 
+ 
+## Target audiences: 
+ 
+For the general user, the visualization can describe sociodemographic variables of the sample of the Colombian population, a description of the Colombian diet, show some trends in the main macronutrients of the diet and illustrate the main taxonomic groups of bacteria found in The intestinal microbiota of individuals. 
+ 
+For the user with previous knowledge in the areas of biological sciences and health, the visualization allows describing joint trends in the analysis of the macronutrients of the diet, the nutritional status and the length of the different sociodemographic characteristics and shows the modifications in different taxa Of interest in health recognizable in literature reports. 
+ 
+### Que? 
+ 
+There is information in the form of a table for 441 people, each with their report on diet, health and intestinal microbiota, data from the gut microbiota and the data set in the form of a matrix where the entirety of the OTUs described. Taxonomic of operation) that are artificial elements that ideally represent species of bacteria, each OTU is assigned to taxonomy that allows generating a hierarchical description of the data. There is no geospatial data or time series. 
+ 
+#### Type of data: 
+ 
+-Category (city, sex, classification of nutritional status, classification of health status) 
+ 
+-Ordinals - Quantitative sequential (all variables of diet, socio-demographic variables: age, stratum, and all health variables) 
+ 
+- Qualitative - ordinal - sequential (classification of nutritional status) 
+ 
+### Why? 
+ 
+Main task No 1: To explore the information described by the different aspects collected (variables or attributes) available in a sample of the Colombian population. Explore, features: Given the vast amount of information and variables available. 
+ 
+Summarize, All data: Create a synthesis of the data on one of the attributes: health, diet or microbiota. 
+A. Categorize the relationship between the elements (possibility of creating data groups) Derive, Characteristics: Create groupings based on gut microbiota abundance data, clusters based on data. 
+B. Discriminate the data by the different sociodemographic variables Compare, characteristics of similarity: compare the data of the main themes of the attributes of age group, sex, and city 
+C. Find the factors that affect health Locate, Characteristics: Look for the factors related to the performance of cardiovascular health D. Enjoy navigation through the different visualization charts Enjoy: That the information found is pleasing to the eye 
+ 
+Main task No.2: Identify patterns in the topics of intestinal microbiota, diet, and health in a sample of the Colombian population. Identify, trends: Identify at least one item for each of the central themes that relate to each other. 
+ 
+Secondary tasks of the main task No.1: A. Identify dependencies between the different topics Discover, dependcy: locate dependencies between the variables B. Classification of the data regarding health or not Derivation, Characteristics: Create groups of data that strongly grouped between them C. Extreme data identification data, outliers: Identify individuals with 
+ 
+### How? 
+ 
+#### IDIOM1 - Multiple filtered graphics 
+ 
+Boards 
+Bar charts 
+Multi-line chart 
+Heatmap with small multiples 
+IDIOM2 - Horizontal dendrogram Marks: Points for nodes and Lines for hierarchical connections based on taxonomy Channels: tree design, based on the different taxonomic categories (phylum, order, class, family, gender, species) Coding: Separating, ordering, Align, Reduce : Filter (from Previous IDIOM and Added by the name of the taxon in the taxonomy
 
-Proyecto final de Visual Analytics UniAndes 2018
-
-CLIENTE : ALEJANDRO REYES
-
-PROFESOR : JOHN A. GUERRA.
-
-ESTUDIANTES:
--ANGELA SOFÍA GARCÍA VEGA, AS.GARCIAV@UNIANDES.EDU.CO  
--CARLOS MORENO IBARGÜEN.      C.MORENO@UNIANDES.EDU.CO
-
-## Contexto:
- 
-Para comprender la información descrita en la visualización se requiere de un conocimiento mínimo sobre salud y las variables que pueden influir sobre la misma. El proyecto busca desarrollar investigación básica en el área de la salud de variables de salud, nutrición y microbiota intestinal. Estudios previos en diferentes poblaciones alrededor del mundo describen que la microbiota intestinal cambia en relación a los diferentes estados de salud del individuo [1], algunos estudios sugieren que la microbiota intestinal cambia con la dieta [2]. Teniendo en cuenta que modificar la dieta es una de las metodologías destacadas para mejorar la salud de las personas en general es importante identificar la relación entre la dieta, la microbiota intestinal y la salud.
- 
-## Público objetivo:
- 
-Para el usuario general la visualización es capaz de describir variables sociodemográficas de la muestra de la población colombiana, una descripción de la dieta colombiana, mostrar algunas tendencias en el consumo de los principales macronutrientes de la dieta e ilustrar los principales grupos taxonómicos de bacterias encontrados en la microbiota intestinal de los individuos.
- 
-Para el usuario con conocimientos previos en áreas de ciencias biológicas y de la salud, la visualización permite describir tendencias conjuntas en el análisis de los macronutrientes de la dieta, el estado nutricional a lo largo de las diferentes características sociodemográficas y muestra claramente cambios en diferentes taxones de interés en salud reconocibles en reportes de la literatura.
- 
-### What?
-Se tiene información en forma de tabla para 441 personas, cada una con su correspondiente información de dieta, salud y microbiota intestinal, de los datos aquellos de mayor dificultad son los de microbiota intestinal ya que es un dataset en forma de matriz donde se describe la totalidad de OTUs (Operationa Taxonomic Units) que son elementos artificiales que idealmente representan una especie de bacteria, cada OTU tiene asignada una taxonomía que permite generar una descripción jerárquica de los datos. No se tienen datos geoespaciales o de series de tiempo.
- 
-Tipos de datos:
-
--Categóricos (ciudad, sexo, clasificación del estado nutricional, clasificación estado de salud)
-
--Ordinales - Cuantitativo secuencial (todas las variables de dieta, variables socio-demográficas: edad, estrato y todas las variables de salud)
-
--Cualitativo - ordinal - secuencial (clasificación del estado nutricional)
- 
-### Why?
- 
-Tarea principal No 1: Explorar la información descrita por los diferentes aspectos recopilados (variables o atributos) disponibles en una muestra de la población colombiana.
-            Explore, features:     Dada la gran cantidad de información y de variables disponibles se             pretende observar el comportamiento de los atributos a medida que se    navega por la información, de forma independiente y en conjunto.                     
-
-Summarize, All Data: Crear una síntesis de los datos respecto a uno de los atributos: salud, dieta o microbiota.
-A. Categorizar la relación entre los atributos (posibilidad de crear clusters de datos)
-            Derive, Features:      Crear agrupaciones basadas en los datos de abundancia de microbiota             intestinal, agrupaciones basadas en los datos          
-B. Discriminar los datos por las diferentes variables sociodemográficas
-            Compare,       similarity-features:   Comparar los datos de las temáticas principales de acuerdo a los       atributos de grupo de edad, sexo y ciudad  
-C. Buscar los factores que afectan la salud
-            Locate, Features:     Buscar los factores relacionados con el atributo de salud   cardiovascular
-D. Disfrutar de navegar a través de las diferentes gráficas de la visualización
-            Enjoy:             Que la información encontrada sea agradable a la vista
- 
- 
-Tarea principal No.2: Identificar patrones entre los temas de microbiota intestinal, dieta y salud en una muestra de la población colombiana. 
-Identify, trends: Identificar al menos un atributo para cada uno de los temas centrales del problema que se relacione entre sí.
-
-Tareas secundarias de la tarea principal No.1:
-A. Identificar dependencias entre los diferentes temas
-            Discover,       dependency: Encontrar        dependencias entre las variables
-B. Clasificación de los datos en términos de saludable o no saludable
-            Derive, Features:      Crear clusters de datos que fuertemente agrupables entre sí
-C. Encontrar datos extremos
-            Identify, outliers:      Identificar individuos con
- 
- 
-### How?
- 
-IDIOM1 – Multiple filtered graphics
-- Tablas
-- Gráficos de barras
-- Multiple Line chart
-- Heatmap con small multiples
- 
-IDIOM2 – Dendograma horizontal
-Marcas: Puntos para los nodos y Lineas para las conecciones jerárquicas basadas en taxonomía
-Canales: tree layout, basado en las diferentes categorias taxonómicas (filum, orden, clase, familia, genero, especie)
-Encode: Separate, order, align,
-Reduce: Filter (from previous IDIOM) y Aggregate por el nombre del taxón en la taxonomía
- 
 ## Insights:
-- Se tienen un número homogéneo de personas a lo largo de las diferentes ciudades, sexo y estado nutricional
-- Dos terceras partes de la población estudiada tiene sobrepeso u obesidad
-- Hay una tendencia de asociación entre el consumo de grasa y proteína, que es inversamente proporcional al consumo de carbohidrato. Hay algunos datos extremos que tienen un muy alto consumo de proteina con un bajo consumo de grasa y visceversa. Lo que indica que la dieta puede ser variable entre cada individuo
-- Revisando el heatmap las OTUs presentes en la mayor parte de los individuos de todas las ciudades se encuentran entre las primeras 36 OTUs las cuales se pueden considerar como descriptoras genéricas de toda la problación colombiana hay algunas OTUs que se encuentran en mayor proporción en alguna de las diferentes ciudades, dichas OTUs son de interés para revisarlas en detalle posteriormente
-- De acuerdo con lo reportado por cada individuo la calidad de la dieta en las diferentes ciudades es buena, lo cual es interesante teniendo en cuenta que dos terceras partes de la población en cada ciudad tienen sobrepeso y obesidad (Generan preguntas como ¿La persona reportó en realidad su consumo usual? ¿La población estudiada conoce lo que es una dieta saludable? De ser así es posible un sesgo en éste dato).
-- Todas las familias taxonómicas descritas se encuentran destribuidas de forma similar a lo largo de los diferentes estados de salud, a lo largo de las diferentes ciudades y del sexo de las personas, su variación es dependiente de la abundancia a pesar de que las diferencias entre las diferentes variables es pequeña.
-- Entre las diferentes ciudades la abundancia relativa de los diferentes taxa se asemejan entre Bogotá, Medellín y Barranquilla, observando diferencias marcadas con Bucaramanga o Cali donde se observa una mayor cantidad de Bacteroidetes y una disminución en la cantidad de Actinobacterias
-- Al comparar las abundancias de las diferentes familias de bacterias no se observan diferencias marcadas entre los diferentes estados nutricionales de la cohorte estudiada
-- Si se observan diferencias en las abundancias de ciertos grupos taxonómicos por ejemplo en aquellos individuos con un estado nutricional normal hay mayor abundancia relativa de Verrucomicrobia un taxón que se caracteriza por describir bacterias ambientales.
 
-## External Links
-Slides: https://docs.google.com/presentation/d/1_FYl-cn3iF9RZo5NQ_I2rFDqR6m7GlxDXIILzBvmjjc/edit?usp=sharing
-Demo: https://cuntaquinte.github.io/va_proyecto/index.html
- 
+- There is a homogenous number of people throughout different cities, sex, and nutritional status.
+- Two-thirds of the studied population is overweight or obese
+- There is a tendency of association between the fat and protein, which is inversely proportional to the carbohydrates. Some data refers to a high level of proteins with a low level of fat and vision. What indicates that the diet can be variable between each
+- Checking the calorie map the OTUs present in most of the individuals of all the cities are in the first 36 OTU which  used as generic descriptors of the said OTUs are of interest to review them in detail later
+- According to what  reported. Each one has its name. You are usual? Does the studied population know what a healthy diet is?
+- All taxonomic families  described as describing a similar way to the length of the different states of health, the range of the various cities and the sex of the people, their part is the dependence on abundance despite the differences between the - - Different variables is small.
+- Among the different cities of the relative abundance of taxa are similar between Bogotá, Medellín, and Barranquilla, where there is a more significant amount of Bacteroidetes observed and a decrease in the amount of Actinobacteria
+- When comparing the abundance of the different families of bacteria, no marked differences were found between the different nutritional states of the studied cohort
+- If differences  observed in the abundance of specific taxonomic groups, for example, in others, with nutritional status, regular, higher, relative, relative to biological diversity.
