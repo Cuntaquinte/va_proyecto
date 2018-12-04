@@ -326,3 +326,47 @@ function dupdate(source) {
   }
 
 }
+//********** Barrita del Color scale ********* 
+
+
+    var data2 = [];
+    for (var i=0; i<10; i++) { data2.push(i) }
+    
+    var x = d3.scalePoint() 
+        .range([0,300])
+        .domain(data2.map(d => d))
+        .padding(0.5);
+    
+    var rainbow = d3.scaleSequential(d3.interpolateRgb("#a8ddb5","#0868ac"))
+        .domain(d3.extent(data2,d=>d));
+    
+    svg.selectAll('rect')
+      .data(data2)
+      .enter().append('rect')
+      .attr('x', d => x(d))
+      .attr('y', 0)
+      .attr('width', x.step())
+      .attr('height', 10)
+      .attr('fill', d => rainbow(d))
+
+    svg.selectAll("text")
+        .data(data2)
+        .enter()
+        .append("text")
+        .text(d => (d/10))
+        .attr("x", d => x(d))
+        .attr("y", 0)
+        .attr("font-size", "5pt")
+        .attr("font-family", "sans-serif")
+        .attr("fill", "black");  
+
+    svg.append('text')
+        .attr('class', 'otuLabel')
+        .attr('x', 5 )
+        .attr('y', 5)
+        .attr('text-anchor', 'end')
+        .attr("font-size", "10pt")
+        .attr("font-family", "sans-serif")
+        .text('Abundancia relativa');
+
+//****************************
