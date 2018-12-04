@@ -50,10 +50,7 @@ var simulation = d3.forceSimulation()
     .velocityDecay(0.6)
 	.force("link", d3.forceLink().id(function(d) { return d.ID; }))
 	.force("charge", d3.forceManyBody().strength(-1))
-    // .force("x", d3.forceX().strength(0.002))
-    // .force("y", d3.forceY().strength(0.002))
     .force("collide", d3.forceCollide().radius(9))
-    // .force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2))
     .force("center", d3.forceCenter(width / 2, height / 2))
     .on("tick", ticked);
 
@@ -75,14 +72,6 @@ function update(selection) {
         });
         selection="ciudad";
     }else{  
-	  //   if (selection=="dend"){
-	  // 	    d3.selectAll('.info').html("");
-			// // d3.selectAll('.qforce').html("");
-	  // 	    d3.selectAll('.info').style("visibility","hidden");
-	  // 	    d3.selectAll('.qMain').style("visibility","hidden");
-	  // 	    d3.selectAll('.aux').style("visibility","hidden");
-	  // 	    d3.selectAll('.frc').style("visibility","hidden");
-	  // 	}else{
 		prepareInfoH();
 	  	    d3.selectAll('.info').style("visibility","visible");
 	  	    d3.selectAll('.qMain').style("visibility","visible");
@@ -132,7 +121,7 @@ function update(selection) {
 		node.exit().remove();
 		// ENTER nodes
 		node = node.enter().append("circle")
-			.attr("class", "node")
+			.attr("class", "qnode")
 			.attr("r", 6)
 			.attr("fill", function(d) {
 				// item=(firstLinks ?d.ciudad:d.sexo)
