@@ -7,6 +7,9 @@ PROFESSOR: JOHN A. GUERRA. 
 STUDENTS: -ANGELA SOFÍA GARCÍA VEGA, AS.GARCIAV@UNIANDES.EDU.CO 
 -CARLOS MORENO IBARGÜEN. C.MORENO@UNIANDES.EDU.CO 
  
+ ### Paper 
+ document available at: http://
+ 
 ## Context: 
  
 To understand the information described in the visualization, a minimum knowledge about health and the variables that can influence it is required. The project seeks to develop basic research in the area of health of the variables of health, nutrition, and intestinal microbiota. Previous studies in different populations found in the world that the intestinal microbiota changes concerning the various health states of the individual [1], some studies that the intestinal microbiota changes with diet [2]. Taking into account that changing the diet is one of the outstanding methodologies to improve the health of people, in general, it is essential to identify the relationship between diet, intestinal microbiota, and health. 
