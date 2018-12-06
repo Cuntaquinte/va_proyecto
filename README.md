@@ -71,9 +71,9 @@ IDIOM2 - Horizontal dendrogram Marks: Points for nodes and Lines for hierarchica
 
 
 
-The MIT License
+## The MIT License
 
-Copyright (c) 2010-2018 Angela Garcia, Carlos Moreno 
+### Copyright (c) 2010-2018 Angela Garcia, Carlos Moreno 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
