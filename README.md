@@ -8,7 +8,7 @@ STUDENTS: -ANGELA SOFÍA GARCÍA VEGA, AS.GARCIAV@UNIANDES.EDU.CO 
 -CARLOS MORENO IBARGÜEN. C.MORENO@UNIANDES.EDU.CO 
  
  ### Paper 
- document available at: http://
+ document available at: https://github.com/Cuntaquinte/va_proyecto/blob/master/doc/Variation_of_Colombian_gut_microbiome_according_to_the_host_diet_and_health.pdf
  
 ## Context: 
  
